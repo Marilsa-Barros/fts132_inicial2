@@ -41,7 +41,6 @@ def calcular_volume_do_paralelograma(largura, comprimento, altura):
     return largura * comprimento * altura
 
 
-
 if __name__ == '__main__':
 
     # Garçon - Requisições / Chamadas

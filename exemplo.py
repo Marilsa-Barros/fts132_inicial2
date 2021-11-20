@@ -1,6 +1,6 @@
 # Passo 1: importar base de dados
 import pandas as pd
-
+from Tools.scripts.dutree import display
 
 tabela = pd.read_csv("telecom_users.csv")
 
