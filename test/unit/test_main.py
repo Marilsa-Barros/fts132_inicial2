@@ -39,3 +39,7 @@ def testar_calcular_area_do_circulo(raio, resultado_esperado):
 
     # 3 - Valida
     assert resultado_atual == resultado_esperado
+
+
+
+
