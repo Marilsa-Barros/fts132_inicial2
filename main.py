@@ -40,6 +40,17 @@ def calcular_area_do_circulo(raio):
 def calcular_volume_do_paralelograma(largura, comprimento, altura):
     return largura * comprimento * altura
 
+   # Exercício calcular função Volume do Cubo
+def calcular_volume_do_cubo(comprimento, largura,altura):
+    try:
+        return comprimento * largura * altura
+    except TypeError:
+        return 'Falha no calculo - volume do cubo não é um número'
+
+# Exercício calcular função Volume do Cilindi
+def calcular_area_do_circulo(raio):
+        return 3.14 * raio ** 2
+
 
 if __name__ == '__main__':
 

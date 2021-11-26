@@ -2,7 +2,7 @@ import csv
 
 import pytest
 
-from main import somar_dois_numeros, calcular_area_do_circulo, calcular_volume_do_paralelograma
+from main import somar_dois_numeros, calcular_area_do_circulo, calcular_volume_do_paralelograma, calcular_volume_do_cubo
 
 
 def testar_somar_dois_numeros():
@@ -76,4 +76,24 @@ def testar_calcular_volume_do_paralelograma(id, largura, comprimento, altura, re
     # - Valida
     assert resultado_atual == int(resultado_esperado)
 
+
+    # Lista de Exercícios
+    # 1- Teste Função Volume do Cubo
+
+@pytest.mark.parametrize('volume,resultado_esperado', [
+    # valores
+    (1, 8),  # teste nº 1
+    (2, 16),  # teste nº 2
+    (3, 6),  # teste nº 3
+    ('a', 'Falha no calculo - volume do cubo não é um número'),  # teste nº 4
+    (' ', 'Falha no calculo - volume doc Cubo não é um número'), # teste nº 5
+])
+def testar_calcular_volume_do_cubo(volume, resultado_esperado,):
+
+    volume = resultado_esperado
+
+    resultado_atual = calcular_volume_do_cubo(volume, resultado_esperado)
+
+    # 3 - Valida
+    assert resultado_atual == resultado_esperado
 

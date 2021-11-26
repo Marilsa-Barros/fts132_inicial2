@@ -1,0 +1,18 @@
+{
+  "id": 1080,
+  "category": {
+    "id": 1,
+    "name": "Cachorro"
+  },
+  "name": "Mag",
+  "photoUrls": [
+    "https://upload.wikimedia.org/wikipedia/pt/5/53/Snoopy_Peanuts.png\n"
+  ],
+  "tags": [
+    {
+      "id": 9,
+      "name": "Vacinado"
+    }
+  ],
+  "status": "available"
+}
