@@ -29,4 +29,24 @@ def testar_incluir_pet():
     assert corpo_da_resposta['name'] == nome_pet_esperado
     #assert corpo_da_resposta['tags.name'] == tag_esperada
 
+def testar_consultar_pet():
+    status_code = 200
+    id = 1080
+    name = 'Mag'
+
+    resposta = requests.get(
+        url=f'{base_url}/{name}',
+        headers=headers
+    )
+
+    corpo_da_resposta = resposta.json()
+    print(resposta)
+    print(resposta.status_code)
+    print(corpo_da_resposta)
+
+    assert resposta.status_code == status_code
+    assert corpo_da_resposta['id'] == id
+    assert corpo_da_resposta['name'] == name
+
+
 
